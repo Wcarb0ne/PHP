@@ -10835,3 +10835,10 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+.txtlabel55{
+  text-align: justify;
+  width: auto;
+  font-size: 100px;
+  color: blue;
+}
