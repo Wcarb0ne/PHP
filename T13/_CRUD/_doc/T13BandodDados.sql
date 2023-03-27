@@ -26,6 +26,6 @@ select * from Usuario;
 insert into Usuario
 (nome_Usuario,login_Usuario,senha_Usuario,confirmarSenha_Usuario,email_Usuario,dataNasc_Usuario,cpf_Usuario,genero_Usuario,telefone1_Usuario,telefone2_Usuario,logradouro_Usuario,cidade_Usuario,uf_Usuario,cep_Usuario,status_Usuario,obs_Usuario)
 values
-('Administrador','admin','123','123','adm@gmail.com','25032023','1122334455','Masculino','11983733531','','ferias','guarulhos','São Paulo','07196255','Ativo','bora')
+('adm','adm','123','123','adm@gmail.com','2023-03-25','1122334455','Masculino','11983733531','','ferias','guarulhos','SP','07196255','Ativo','bora')
 
 

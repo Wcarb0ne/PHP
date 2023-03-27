@@ -1,3 +1,4 @@
+<?php include_once ('Usuario_btoPesquisar.php');?>
 <form action="" class="form-control" method="POST">
     <div class="row">
         <div class="col-sm-12">
@@ -130,9 +131,9 @@
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-12">
-            <button name="btoPesquisa" class="btn btn-primary"formaction="Usuario_btoPesquisa.php">Pesquisar</button>
-            <button name="btoCadastrar" class="btn btn-success"formaction="Usuario_btoCadastrar.php">Cadastrar</button>
-            <button name="btoAlterar" class="btn btn-warning"formaction="Usuario_btoAlterar.php">Alterar</button>
+            <button name="btoPesquisa" class="btn btn-dark"formaction="Usuario_btoPesquisa.php">Pesquisar</button>
+            <button name="btoCadastrar" class="btn btn-dark"formaction="Usuario_btoCadastrar.php">Cadastrar</button>
+            <button name="btoAlterar" class="btn btn-dark"formaction="Usuario_btoAlterar.php">Alterar</button>
             <button type="reset" name="btoLimpar" class="btn btn-dark">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger"formaction="Usuario_btoExcluir.php">Excluir</button>
         </div>

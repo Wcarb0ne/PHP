@@ -1,17 +1,31 @@
 <?php
 include_once('conexao.php');
 
-    try {
-       
-        $stmt = $pdo->prepare('DELETE FROM Usuario WHERE id = :id');
+    if($_POST)
+    {
+            $id_Usuario = $_POST['txtID']
         
-        $stmt->blindParam(':id',SID);
-        $stmt->execute();
+        try 
+        {
+        
+            $sql = $conn->prepare (
+                'DELETE FROM Usuario WHERE id_Usuario = :id_Usuario');
+            
+            $sql->execute(array(
 
-        echo $stmt->rowCount();
-        
-    } catch (PDOException $ex) {
-        echo 'Erro ' . $ex->getMessage();
+                ':id_Usuario'=>$id_Usuario
+
+            ));
+            if($sql->rowCount()==1)
+            {
+                echo"<p>Dados ecluidos com Sucesso</p>";
+                echo'<p><a href="index.php">Voltar</p>';
+            }
+            
+        } 
+        catch (PDOException $ex) {
+            echo $ex->getMessage();
+        }
     }
 
 ?>

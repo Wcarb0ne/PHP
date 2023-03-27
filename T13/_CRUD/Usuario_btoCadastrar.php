@@ -24,9 +24,7 @@ if($_POST)
         $sql = $conn->prepare(
             "insert into Usuario
             (nome_Usuario,login_Usuario,senha_Usuario,confirmarSenha_Usuario,email_Usuario,dataNasc_Usuario,cpf_Usuario,genero_Usuario,telefone1_Usuario,telefone2_Usuario,logradouro_Usuario,cidade_Usuario,uf_Usuario,cep_Usuario,status_Usuario,obs_Usuario)
-
             values
-
             (:nome_Usuario,:login_Usuario,:senha_Usuario,:confirmarSenha_Usuario,:email_Usuario,:dataNasc_Usuario,:cpf_Usuario,:genero_Usuario,:telefone1_Usuario,:telefone2_Usuario,:logradouro_Usuario,:cidade_Usuario,:uf_Usuario,:cep_Usuario,:status_Usuario,:obs_Usuario)"
         );
 
@@ -34,7 +32,7 @@ if($_POST)
             ':nome_Usuario'=>$nome_Usuario,
             ':login_Usuario'=>$login_Usuario,
             ':senha_Usuario'=>$senha_Usuario,
-            ':ConfirmarSenha_Usuario'=>$confirmarSenha_Usuario,
+            ':confirmarSenha_Usuario'=>$confirmarSenha_Usuario,
             ':email_Usuario'=>$email_Usuario,
             ':dataNasc_Usuario'=>$dataNasc_Usuario,
             ':cpf_Usuario'=>$cpf_Usuario,
