@@ -1,19 +1,21 @@
 <?php
 include_once('conexao.php');
 
+
+
     if($_POST)
     {
-            $id_Usuario = $_POST['txtID'];
+            $id_Categoria = $_POST['txtID'];
         
         try 
         {
         
             $sql = $conn->prepare (
-                'DELETE FROM Usuario WHERE id_Usuario = :id_Usuario');
+                'DELETE FROM Categoria WHERE id_Categoria = :id_Categoria');
             
             $sql->execute(array(
 
-                ':id_Usuario'=>$id_Usuario
+                ':id_Categoria'=>$id_Categoria
 
             ));
             if($sql->rowCount()==1)

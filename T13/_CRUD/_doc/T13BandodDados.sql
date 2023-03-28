@@ -22,6 +22,25 @@ create table Usuario
     status_Usuario varchar(20) not null,
     obs_Usuario varchar(255) null
 );
+create table Categoria
+(
+id_Categoria int auto_increment not null primary key,
+cadastro_Categoria timestamp not null,
+nome_Categoria varchar(30) not null,
+status_Categoria varchar(20) not null,
+descricao_Categoria varchar(255) not null,
+obs_Categoria varchar(255) null
+);
+create table Produto
+(
+id_Produto int auto_increment not null primary key,
+id_Departamento_Produto int not null,
+cadastro_Produto timestamp not null,
+nome_Produto varchar(30) not null,
+status_Produto varchar(20) not null,
+descricao_Produto varchar(255) not null,
+obs_Produto varchar(255) null
+);
 select * from Usuario;
 insert into Usuario
 (nome_Usuario,login_Usuario,senha_Usuario,confirmarSenha_Usuario,email_Usuario,dataNasc_Usuario,cpf_Usuario,genero_Usuario,telefone1_Usuario,telefone2_Usuario,logradouro_Usuario,cidade_Usuario,uf_Usuario,cep_Usuario,status_Usuario,obs_Usuario)

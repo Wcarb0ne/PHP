@@ -1,5 +1,5 @@
 <?php
-include_once('conexao.php');
+include_once('Conexao.php');
 
 $id_Usuario="";
 $nome_Usuario ="";
@@ -20,12 +20,12 @@ $cadastro_Usuario="";
 $status_Usuario ="";
 $obs_Usuario ="";
 
-if($_Post)
+if($_POST)
 {
-    $id_Usuario =$_Post['txtID'];
+    $id_Usuario =$_POST['txtID'];
     try
     {
-        $sql = $conn->query('select * from Usuario where id_Usuario=');
+        $sql = $conn->query('select * from Usuario where id_Usuario='.$id_Usuario);
         
         if($sql->rowCount()==1)
         {
@@ -51,6 +51,11 @@ if($_Post)
                 $obs_Usuario =$linha[17];
             }
         } 
+        else
+        {
+            echo "<p>Erro, dados não encontrado</p>";
+        }
+
     }
     catch(PDOException $ex)
     {
