@@ -18,7 +18,7 @@
     <div class="row"><!--bloco nome,  Status-->
     <div class="col-sm-3">
             <label for="Nome">Nome*</label>
-            <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Completo"value="<?=$nome_Produto?>">
+            <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Informe o Produto"value="<?=$nome_Produto?>">
         </div>
         <div class="col-sm-6"></div>
         <div class="col-sm-3">
@@ -33,13 +33,13 @@
     <div class="row mt-1"><!-- Descrição -->
         <div class="col-sm-12">
         <label for="Nome">Descrição</label>
-            <textarea name="txtDescricao" id="txtDescricao" class="form-control" rows="5" placeholder="Insira a observação do cadastro (campo Obrigatório)"value="<?=$descricao_Produto?>"></textarea>
+            <textarea name="txtDescricao" id="txtDescricao" class="form-control" rows="5" placeholder="Insira as informações do Produto (campo Obrigatório)"value="<?=$descricao_Produto?>"></textarea>
         </div>
     </div>
     <div class="row mt-1"><!-- Observação -->
         <div class="col-sm-12">
         <label for="Nome">Observação</label>
-            <textarea name="txtObs" id="txtObs" class="form-control" rows="5" placeholder="Insira a observação do cadastro (campo não obrigatório)"value="<?=$obs_Produto?>"></textarea>
+            <textarea name="txtObs" id="txtObs" class="form-control" rows="5" placeholder="Insira uma observação (campo não obrigatório)"value="<?=$obs_Produto?>"></textarea>
         </div>
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->

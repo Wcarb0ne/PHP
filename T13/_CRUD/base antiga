@@ -1,0 +1,54 @@
+private void ComboBox()
+        {
+            string sql = "select id_departamento, nome_departamento from Departamento";
+            SqlConnection con = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader reader;
+
+            DataTable tabela = new DataTable();
+            con.Open();
+
+            try
+            {
+                reader = cmd.ExecuteReader();
+                tabela.Load(reader);
+
+                cboDepart.DisplayMember = "nome_departamento";
+                cboDepart.DataSource = tabela;
+
+
+                cboIDdepart.DisplayMember = "id_departamento";
+                cboIDdepart.DataSource = tabela;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro - " + ex.ToString());
+                Application.Exit();
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+jofbnaifsbnvjosnvojsfnvsfmnokvmnfsokvmfsjvmfjvnifnvihsfnvihfnsuhvbfsdihvbfsuhvbfbvfvbfsbvihbvfisbvihsfbvihsfbnihv
+
+
+        //adicionar talvez a bto pesquisa ou cria outra so pra editar 
+<a href=".php?id=1">Editar</a>
+no php você faz a consulta vindo do parametro:
+
+$id = $_GET['id'];
+
+ //Recebe o parâmetro passado pela sua url
+e faz a consulta no banco de dados
+
+$Departamento = ("SELECT * FROM Departamento WHERE id = '$id'");
+Crie um formulário com os campos onde você ira informar os valores do aluno para possíveis alteração por exemplo:
+//isso vai no formulario
+<input type="text" name="nome" value="<?php echo $row['nome'] ?>">
+depois é só aplicar a ação de alteração.
+
+//em Value você imprime a informação do aluno de acordo com a sua necessidade.
