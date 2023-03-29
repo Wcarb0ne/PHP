@@ -52,3 +52,18 @@ Crie um formulário com os campos onde você ira informar os valores do aluno pa
 depois é só aplicar a ação de alteração.
 
 //em Value você imprime a informação do aluno de acordo com a sua necessidade.
+
+
+
+ LAYOUT TESTE PARA FORM USUARIO
+
+ <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
