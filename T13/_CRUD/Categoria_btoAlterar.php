@@ -1,7 +1,7 @@
 <?php
 include_once('Conexao.php');
-if($_Post)
-{
+if($_POST)
+{   $id_Categoria = $_POST['txtID']; 
     $nome_Categoria = $_POST['txtNome'];
     $status_Categoria = $_POST['txtStatus'];
     $descricao_Categoria = $_POST['txtDescricao']; 
@@ -20,6 +20,7 @@ if($_Post)
         );   
 
         $sql->execute(array(
+            ':id_Categoria'=>$id_Categoria,
             ':nome_Categoria'=>$nome_Categoria,
             ':status_Categoria'=>$status_Categoria,
             ':descricao_Categoria'=>$descricao_Categoria,

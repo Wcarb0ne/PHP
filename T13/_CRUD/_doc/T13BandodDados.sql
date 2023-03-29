@@ -34,14 +34,17 @@ obs_Categoria varchar(255) null
 create table Produto
 (
 id_Produto int auto_increment not null primary key,
-id_Departamento_Produto int not null,
+id_Categoria_Produto int not null,
 cadastro_Produto timestamp not null,
 nome_Produto varchar(30) not null,
 status_Produto varchar(20) not null,
 descricao_Produto varchar(255) not null,
 obs_Produto varchar(255) null
 );
-select * from Usuario;
+ALTER TABLE Produto ADD CONSTRAINT id_Categoria_Produto FOREIGN KEY(id_Categoria_Produto) REFERENCES Categoria (id_Categoria);
+describe Produto; /*apertar no raio I*/
+
+select * from Produto;
 insert into Usuario
 (nome_Usuario,login_Usuario,senha_Usuario,confirmarSenha_Usuario,email_Usuario,dataNasc_Usuario,cpf_Usuario,genero_Usuario,telefone1_Usuario,telefone2_Usuario,logradouro_Usuario,cidade_Usuario,uf_Usuario,cep_Usuario,status_Usuario,obs_Usuario)
 values

@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db = 'T13_CRUD';
 $user = 'root';
-$pass = '';
+$pass = 'Passw0rd';
 
 try
 {

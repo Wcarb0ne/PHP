@@ -1,6 +1,6 @@
 <?php
 include_once('Conexao.php');
-if($_Post)
+if($_POST)
 {
 $id_Usuario = $_POST['txtID'];    
 $nome_Usuario = $_POST['txtNome'];

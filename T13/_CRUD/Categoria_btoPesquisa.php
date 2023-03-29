@@ -20,11 +20,11 @@ if($_POST)
             foreach($sql as $linha)
             {
                 $id_Categoria=$linha[0];
-                $cadastro_Categoria=$linha[2]; 
-                $nome_Categoria =$linha[3];
-                $status_Categoria =$linha[4];
-                $descricao_Categoria =$linha[5];                
-                $obs_Categoria =$linha[6];
+                $cadastro_Categoria=$linha[1]; 
+                $nome_Categoria =$linha[2];
+                $status_Categoria =$linha[3];
+                $descricao_Categoria =$linha[4];                
+                $obs_Categoria =$linha[5];
             }
         } 
         else
