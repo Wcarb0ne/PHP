@@ -1,9 +1,7 @@
 <?php
 session_start();
 
-if($_SESSION &&($_SESSION['idUsuario'])&&
-isset($_SESSION['nomeUsuario'])&&
-isset($_SESSION['loginUsuario']))
+if($_SESSION &&($_SESSION['idUsuario'])&& isset($_SESSION['nomeUsuario'])&& isset($_SESSION['loginUsuario']))
 
 {
     $idUsuario=$_SESSION['idUsuario'];
@@ -11,7 +9,7 @@ isset($_SESSION['loginUsuario']))
     $loginUsuario=$_SESSION['loginUsuario'];
 }
 else{
-    header('location.index.php');
+    header('location:index.php');
 }
 ?>
 <div class="container">
