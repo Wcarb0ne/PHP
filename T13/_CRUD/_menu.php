@@ -3,15 +3,15 @@
         <ul>
             <li><i class=""></i>Menu</li>
 
-            <li><i class=""></i><a href="Login_sistema.php?Tela=Home" class="corno">Home</li>
+            <a href="Login_sistema.php?Tela=Home" class="corno"><li><i class="bi bi-house-fill"> </i>Home</li></a>
 
-            <li><i class=""></i><a href="Login_sistema.php?Tela=Usuario" class="corno">Usuario</li>
+            <a href="Login_sistema.php?Tela=Usuario" class="corno"><li><i class="bi bi-person-square"> </i>Usuario</li></a>
 
-            <li><i class=""></i><a href="Login_sistema.php?Tela=Categoria" class="corno">Categoria</li>
+            <a href="Login_sistema.php?Tela=Categoria" class="corno"><li><i class="bi bi-collection-fill"> </i>Categoria</li></a>
 
-            <li><i class=""></i><a href="Login_sistema.php?Tela=Produto" class="corno">Produto</a></li>
+            <a href="Login_sistema.php?Tela=Produto" class="corno"><li><i class="bi bi-wallet-fill"> </i>Produto</li></a>
 
-            <li><i class=""></i><a href="Login_sistema.php?Tela=Sair" class="corno">Sair</a></li>
+            <a href="Login_sistema.php?Tela=Sair" class="corno"><li><i class="bi bi-box-arrow-right"> </i>Sair</li></a>
 
         </ul>
     </div> 
