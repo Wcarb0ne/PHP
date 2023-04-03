@@ -136,6 +136,7 @@
             <button name="btoAlterar" class="btn btn-dark"formaction="Usuario_btoAlterar.php">Alterar</button>
             <button type="reset" name="btoLimpar" class="btn btn-dark">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger"formaction="Usuario_btoExcluir.php">Excluir</button>
+            <button name="btotabela" class="btn btn-dark"formaction="Login_sistema.php?Tela=Utabela">Tabela</button>
         </div>
     </div>
 </form>

@@ -66,7 +66,7 @@ $obs_Usuario = $_POST['txtObs'];
         if($sql->rowCount()==1)
         {
             echo "<p>Dados alterados com sucesso</p>";
-            echo '<a href="index.php">Voltar</a>';
+            echo '<a href="Login_sistema.php">Voltar</a>';
         }
     }
     catch(PDOException $ex)

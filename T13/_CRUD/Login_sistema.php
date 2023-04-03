@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/PagSitema.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="_CRUD/css/bootstrap.min.css">
+    <link rel="stylesheet" href="_CRUD/css/bootstrap.min.css">
     
     <title>Login</title>
 </head>
@@ -51,6 +53,10 @@
                             elseif($tela =='Sair')
                             {
                                 include_once('Login_autenticarSair.php');
+                            }
+                            elseif($tela=='Utabela')
+                            {
+                                include_once('Usuario_tabela.php');
                             }
                         }
                         else{

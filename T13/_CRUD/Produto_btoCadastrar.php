@@ -28,7 +28,7 @@ if($_POST)
         {
             echo "<p>Dados cadastrados com sucesso</p>";
             echo "<p>Id Gerado: ".$conn->lastInsertId()."</p>";
-            echo '<a href="index.php">Voltar</a>';
+            echo '<a href="Login_sistema.php">Voltar</a>';
         }
     
     } catch (PDOException $ex) {
