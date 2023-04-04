@@ -23,10 +23,9 @@ $obs_Usuario = $_POST['txtObs'];
     try 
     {
        
-        $sql = $conn->prepare('UPDATE Usuario SET
-    
+        $sql = $conn->prepare('update Usuario set
         $nome_Usuario =:nome_Usuario, 
-        $nome_Usuario =:nome_Usuario, 
+        $login_Usuario =:login_Usuario, 
         $senha_Usuario =:senha_Usuario, 
         $confirmarSenha_Usuario =:confirmarSenha_Usuario, 
         $email_Usuario =:email_Usuario, 
@@ -41,11 +40,11 @@ $obs_Usuario = $_POST['txtObs'];
         $cep_Usuario =:cep_Usuario,  
         $status_Usuario =:status_Usuario, 
         $obs_Usuario =:obs_Usuario
-        where id_usuario=:id_usuario'
+        where id_Usuario=:id_Usuario'
         );   
 
         $sql->execute(array(
-            'id_usuario'=>$id_usuario,
+            'id_Usuario'=>$id_Usuario,
             ':nome_Usuario'=>$nome_Usuario,
             ':login_Usuario'=>$login_Usuario,
             ':senha_Usuario'=>$senha_Usuario,
@@ -66,7 +65,7 @@ $obs_Usuario = $_POST['txtObs'];
         if($sql->rowCount()==1)
         {
             echo "<p>Dados alterados com sucesso</p>";
-            echo '<a href="Login_sistema.php">Voltar</a>';
+            echo'<p><a href="Login_sistema.php">Voltar</p>';
         }
     }
     catch(PDOException $ex)

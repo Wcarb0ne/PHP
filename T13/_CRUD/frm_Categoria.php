@@ -44,11 +44,11 @@
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-12">
-            <button name="btoPesquisa" class="btn btn-dark"formaction="index.php">Pesquisar</button>
-            <button name="btoCadastrar" class="btn btn-dark"formaction="Categoria_btoCadastrar.php">Cadastrar</button>
-            <button name="btoAlterar" class="btn btn-dark"formaction="Categoria_btoAlterar.php">Alterar</button>
-            <button type="reset" name="btoLimpar" class="btn btn-dark"formaction="index.php">Limpar</button>
-            <button name="btoExcluir" class="btn btn-danger"formaction="Categoria_btoExcluir.php">Excluir</button>
+            <button name="btoPesquisa" class="btn btn-dark"formaction="Login_sistema.php?Tela=Categoria">Pesquisar</button>
+            <button name="btoCadastrar" class="btn btn-dark"formaction="Categoria_btoCadastrar.php?Tela=Categoria">Cadastrar</button>
+            <button name="btoAlterar" class="btn btn-dark"formaction="Categoria_btoAlterar.php?Tela=Categoria">Alterar</button>
+            <a type="reset" name="btoLimpar" class="btn btn-dark"href="Login_sistema.php?Tela=Categoria">Limpar</a>
+            <button name="btoExcluir" class="btn btn-danger"formaction="Categoria_btoExcluir.php?Tela=Categoria">Excluir</button>
         </div>
     </div>
 </form>

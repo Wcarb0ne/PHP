@@ -131,11 +131,11 @@
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-12">
-            <button name="btoPesquisa" class="btn btn-dark"formaction="index.php">Pesquisar</button>
-            <button name="btoCadastrar" class="btn btn-dark"formaction="Usuario_btoCadastrar.php">Cadastrar</button>
-            <button name="btoAlterar" class="btn btn-dark"formaction="Usuario_btoAlterar.php">Alterar</button>
-            <button type="reset" name="btoLimpar" class="btn btn-dark">Limpar</a>
-            <button name="btoExcluir" class="btn btn-danger"formaction="Usuario_btoExcluir.php">Excluir</button>
+            <button name="btoPesquisa" class="btn btn-dark"formaction="Login_sistema.php?Tela=Usuario">Pesquisar</button>
+            <button name="btoCadastrar" class="btn btn-dark"formaction="Usuario_btoCadastrar.php?Tela=Usuario">Cadastrar</button>
+            <button name="btoAlterar" class="btn btn-dark"formaction="Usuario_btoAlterar.php?Tela=Usuario">Alterar</button>
+            <a type="reset" name="btoLimpar" class="btn btn-dark"href="Login_sistema.php?Tela=Usuario">Limpar</a>
+            <button name="btoExcluir" class="btn btn-danger"formaction="Usuario_btoExcluir.php?Tela=Usuario">Excluir</button>
             <button name="btotabela" class="btn btn-dark"formaction="Login_sistema.php?Tela=Utabela">Tabela</button>
         </div>
     </div>

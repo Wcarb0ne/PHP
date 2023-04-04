@@ -54,6 +54,8 @@ if($_POST)
         else
         {
             echo "<p>Erro, dados não encontrado</p>";
+            echo'<p><a href="Login_sistema.php">Voltar</p>';
+
         }
 
     }
