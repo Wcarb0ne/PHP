@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <script src="../aulaJAVA/js/jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="../aulaJAVA/js/bootstrap.css">
+
+</head>
+<body>
+    <script>
+        $btoMais="0";
+        $btoMenos="0";
+        $btoMult="0";
+        $btoDiv="0";
+
+        var txtN1;
+        var txtN2;
+        
+         var resultado=('$resultado');
+
+        function calcular (rusualtado){
+
+            var txtN1 = calculadora.calcform.txtN1.value;  
+            var txtN2 = calculadora.calcform.txtN1.value;
+
+            if(open =="btoMais"){
+                var resultado = parseInt(txtN1) + parseInt(txtN2); 
+
+            }
+            else(open =="btoMais"){
+                var resultado = txtN1 - txtN2
+            }
+
+            if(open =="btoMult"){
+                    var resultado = txtN1 * txtN2 
+            }
+
+            if(open =="btoDvid"){
+                    var resultado = txtN1 / txtN2 
+            } 
+           if(open =="btoMais"){
+                    var resultado = parseInt(txtN1) + parseInt(txtN2); 
+            }    
+        }
+
+       
+        
+        
+
+    </script>
+<div class="container mt-4" >
+    <form action="" class="form-control">
+        <div class="row">
+            <div class="col-sm-3">
+                <input type="test" class="form-control" placeholder="informe N1" name="txtN1" id="txtN1">
+            </div>
+            <div class="col-sm-3">
+                <input type="test" class="form-control" placeholder="informe N1" name="txtN1" id="txtN1" >
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-warning" name="btoMais">+</button>
+                <button class="btn btn-warning" name="btoMenos">-</button>
+                <button class="btn btn-warning" name="btoMult">*</button>
+                <button class="btn btn-warning" name="btoDiv">/</button>
+            </div>
+                <input type="text" name="resultado" id="resultado" />
+        </div>
+    </form>
+</div>    
+</body>
+</html>
