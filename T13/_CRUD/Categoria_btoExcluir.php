@@ -19,7 +19,7 @@ include_once('Conexao.php');
             if($sql->rowCount()==1)
             {
                 echo"<p>Dados ecluidos com Sucesso</p>";
-                echo'<p><a href="Login_sistema.php">Voltar</p>';
+                echo'<p><a href="Login_sistema.php?Tela=Categoria">Voltar</p>';
             }
             
         } 

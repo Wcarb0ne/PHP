@@ -58,12 +58,18 @@
                             {
                                 include_once('Usuario_tabela.php');
                             }
+                            elseif($tela=='Ctabela')
+                            {
+                                include_once('Categoria_Tabela.php');
+                            }
+                            elseif($tela=='Ptabela')
+                            {
+                                include_once('Produto_Tabela.php');
+                            }
                         }
                         else{
                             echo '<h1> ERRO, Pagina não encontrada </h1>';
                         }
-                    
-                
                     }
                     else{
                         include_once('_Home.php');

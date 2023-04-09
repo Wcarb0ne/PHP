@@ -22,17 +22,17 @@
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Completo"value="<?=$nome_Usuario?>">
         </div>
         <div class="col-sm-3">
-        <label for="Nome">Data Nascimento*</label>
+            <label for="Nome">Data Nascimento*</label>
             <input type="date" class="form-control" name="txtDataNasc" id="txtDataNasc" placeholder="Data Nascimento"value="<?=$dataNasc_Usuario?>">
         </div>
         <div class="col-sm-3">
-        <label for="Nome">CPF*</label>
+            <label for="Nome">CPF*</label>
             <input type="tel" class="form-control" name="txtCpf" id="txtCpf" placeholder="Informe seu CPF"value="<?=$cpf_Usuario?>">
         </div>
         <div class="col-sm-3">
-        <label for="Nome">Gênero*</label>
+            <label for="Nome">Gênero*</label>
             <select name="txtGenero" id="txtGenero" class="form-control">
-                <option value=""<?=($genero_Usuario=="" ? 'selected' : '')?>>-- Selecione seu Gênero --</option>
+                <option value=""<?=($genero_Usuario=="" ? 'selected' : '')?>> ->Selecione seu Gênero<-</option>
                 <option value="Masculino"<?=($genero_Usuario=="Masculino" ? 'selected' : '')?>>Masculino</option>
                 <option value="Feminino"<?=($genero_Usuario=="Feminino" ? 'selected' : '')?>>Feminino</option>
             </select>
@@ -40,36 +40,36 @@
     </div>
     <div class="row mt-1"><!--bloco  email tel1 tel 2-->
         <div class="col-sm-4">
-        <label for="Nome">E-mail*</label>
+            <label for="Nome">E-mail*</label>
             <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira seu Email"value="<?=$email_Usuario?>">
         </div>
         <div class="col-sm-4">
-        <label for="Nome">Telefone*</label>
+            <label for="Nome">Telefone*</label>
             <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Insira um telefone"value="<?=$telefone1_Usuario?>">
         </div>
         <div class="col-sm-4">
-        <label for="Nome">Telefone2</label>
+            <label for="Nome">Telefone2</label>
             <input type="tel" class="form-control" name="txtTelefone2" id="txtTelefone2" placeholder="Insira um telefone 2"value="<?=$telefone2_Usuario?>">
         </div>
     </div>
     <!-- SEPARAR-->
     <div class="row mt-1"><!--LOGRADOURO, CIDADE , estado(UF) , CEP-->
         <div class="col-sm-3">
-        <label for="Nome">Logradouro*</label>
+            <label for="Nome">Logradouro*</label>
             <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder="Ex: Rua Luiz Faccini, 132. "value="<?=$logradouro_Usuario?>">
         </div>
         <div class="col-sm-2">
-        <label for="Nome">Cep*</label>
+            <label for="Nome">Cep*</label>
             <input type="tel" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep"value="<?=$cep_Usuario?>">
         </div>
         <div class="col-sm-3">
-        <label for="Nome">Cidade*</label>
+            <label for="Nome">Cidade*</label>
             <input type="text" class="form-control" name="txtCidade" id="txtCidade" placeholder="Inform sua Cidade"value="<?=$cidade_Usuario?>">
         </div>
         <div class="col-sm-2">
-        <label for="Nome">UF*</label>
+            <label for="Nome">UF*</label>
             <select name="txtUF" id="txtUF" class="form-control">
-                <option value=""<?=($uf_Usuario=="" ? 'selected' : '')?>> -->Selecione<--</option>
+                <option value=""<?=($uf_Usuario=="" ? 'selected' : '')?>> ->Selecione<- </option>
                 <option value="Acre"<?=($uf_Usuario=="Acre" ? 'selected' : '')?>>AC</option>
                 <option value="Alagoas"<?=($uf_Usuario=="Alagoas" ? 'selected' : '')?>>AL</option>
                 <option value="Amapá"<?=($uf_Usuario=="Amapá" ? 'selected' : '')?>>AP</option>
@@ -99,9 +99,9 @@
             </select>
         </div>
         <div class="col-sm-2">
-        <label for="Nome">Status*</label>
+            <label for="Nome">Status*</label>
             <select name="txtStatus" id="txtStatus" class="form-control">
-                <option value="" selected> -->Selecione<--</option>
+                <option value="" selected> ->Selecione<- </option>
                 <option value="Ativo"<?=($status_Usuario=="Ativo" ? 'selected' : '')?>>Ativo</option>
                 <option value="Inativo"<?=($status_Usuario=="Inativo" ? 'selected' : '')?>>Inativo</option>
             </select>
@@ -110,15 +110,15 @@
     <!-- SEPARAR-->
     <div class="row mt-1"><!--LOGIN , SENHA , CONFIRMAR SENHA , STATUS -->
         <div class="col-sm-4">
-        <label for="Nome">Login*</label>
+            <label for="Nome">Login*</label>
             <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Login do usuário"value="<?=$login_Usuario?>">
         </div>
         <div class="col-sm-4">
-        <label for="Nome">Senha*</label>
+            <label for="Nome">Senha*</label>
             <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Informe a senha"value="<?=$senha_Usuario?>">
         </div>
         <div class="col-sm-4">
-        <label for="Nome">Confirmar Senha*</label>
+            <label for="Nome">Confirmar Senha*</label>
             <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Informe a senha"value="<?=$confirmarSenha_Usuario?>">
         </div>
     </div>
@@ -126,17 +126,17 @@
     <div class="row mt-1"><!-- Observação -->
         <div class="col-sm-12">
         <label for="Nome">Observação</label>
-            <textarea name="txtObs" id="txtObs" class="form-control" rows="5" placeholder="Insira a observação do cadastro (campo não obrigatório)"value="<?=$obs_Usuario?>"></textarea>
+            <textarea name="txtObs" id="txtObs" class="form-control" rows="5" placeholder="Insira a observação do cadastro (campo não obrigatório)"><?=$obs_Usuario?></textarea>
         </div>
     </div>
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-12">
-            <button name="btoPesquisa" class="btn btn-dark"formaction="Login_sistema.php?Tela=Usuario">Pesquisar</button>
-            <button name="btoCadastrar" class="btn btn-dark"formaction="Usuario_btoCadastrar.php?Tela=Usuario">Cadastrar</button>
-            <button name="btoAlterar" class="btn btn-dark"formaction="Usuario_btoAlterar.php?Tela=Usuario">Alterar</button>
+            <button name="btoPesquisa" class="btn btn-primary"formaction="Login_sistema.php?Tela=Usuario">Pesquisar</button>
+            <button name="btoCadastrar" class="btn btn-success"formaction="Usuario_btoCadastrar.php?Tela=Usuario">Cadastrar</button>
+            <button name="btoAlterar" class="btn btn-warning"formaction="Usuario_btoAlterar.php?Tela=Usuario">Alterar</button>
             <a type="reset" name="btoLimpar" class="btn btn-dark"href="Login_sistema.php?Tela=Usuario">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger"formaction="Usuario_btoExcluir.php?Tela=Usuario">Excluir</button>
-            <button name="btotabela" class="btn btn-dark"formaction="Login_sistema.php?Tela=Utabela">Tabela</button>
+            <button name="btotabela" class="btn btn-info"formaction="Login_sistema.php?Tela=Ctabela">Tabela</button>
         </div>
     </div>
 </form>

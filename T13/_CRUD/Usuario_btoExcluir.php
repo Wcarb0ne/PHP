@@ -19,7 +19,7 @@ include_once('conexao.php');
             if($sql->rowCount()==1)
             {
                 echo"<p>Dados excluidos com Sucesso</p>";
-                echo'<p><a href="Login_sistema.php">Voltar</p>';
+                echo'<p><a href="Login_sistema.php?Tela=Usuario">Voltar</p>';
             }
             
         } 

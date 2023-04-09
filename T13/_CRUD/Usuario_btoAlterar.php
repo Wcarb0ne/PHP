@@ -22,29 +22,30 @@ $obs_Usuario = $_POST['txtObs'];
 
     try 
     {
-       
-        $sql = $conn->prepare('update Usuario set
-        $nome_Usuario =:nome_Usuario, 
-        $login_Usuario =:login_Usuario, 
-        $senha_Usuario =:senha_Usuario, 
-        $confirmarSenha_Usuario =:confirmarSenha_Usuario, 
-        $email_Usuario =:email_Usuario, 
-        $dataNasc_Usuario =:dataNasc_Usuario, 
-        $cpf_Usuario =:cpf_Usuario,  
-        $genero_Usuario =:genero_Usuario,  
-        $telefone1_Usuario =:telefone1_Usuario,  
-        $telefone2_Usuario =:telefone2_Usuario, 
-        $logradouro_Usuario =:logradouro_Usuario,  
-        $cidade_Usuario =:cidade_Usuario,  
-        $uf_Usuario =:uf_Usuario,  
-        $cep_Usuario =:cep_Usuario,  
-        $status_Usuario =:status_Usuario, 
-        $obs_Usuario =:obs_Usuario
+     
+        $sql = $conn->prepare(
+            'update Usuario set
+        nome_Usuario=:nome_Usuario, 
+        login_Usuario=:login_Usuario, 
+        senha_Usuario=:senha_Usuario, 
+        confirmarSenha_Usuario=:confirmarSenha_Usuario, 
+        email_Usuario=:email_Usuario, 
+        dataNasc_Usuario=:dataNasc_Usuario, 
+        cpf_Usuario=:cpf_Usuario,  
+        genero_Usuario=:genero_Usuario,  
+        telefone1_Usuario=:telefone1_Usuario,  
+        telefone2_Usuario=:telefone2_Usuario, 
+        logradouro_Usuario=:logradouro_Usuario,  
+        cidade_Usuario=:cidade_Usuario,  
+        uf_Usuario=:uf_Usuario,  
+        cep_Usuario=:cep_Usuario,  
+        status_Usuario=:status_Usuario, 
+        obs_Usuario=:obs_Usuario
         where id_Usuario=:id_Usuario'
         );   
 
         $sql->execute(array(
-            'id_Usuario'=>$id_Usuario,
+            ':id_Usuario'=>$id_Usuario,
             ':nome_Usuario'=>$nome_Usuario,
             ':login_Usuario'=>$login_Usuario,
             ':senha_Usuario'=>$senha_Usuario,
@@ -65,7 +66,7 @@ $obs_Usuario = $_POST['txtObs'];
         if($sql->rowCount()==1)
         {
             echo "<p>Dados alterados com sucesso</p>";
-            echo'<p><a href="Login_sistema.php">Voltar</p>';
+            echo'<a href="Login_sistema.php?Tela=Usuario">Voltar</a>';
         }
     }
     catch(PDOException $ex)

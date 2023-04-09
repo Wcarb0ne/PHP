@@ -12,10 +12,10 @@ if($_POST)
        
         $sql = $conn->prepare('UPDATE Categoria SET
     
-        $nome_Categoria =:nome_Categoria, 
-        $status_Categoria =:status_Categoria, 
-        $descricao_Categoria =:descricao_Categoria,  
-        $obs_Categoria =:obs_Categoria
+        nome_Categoria =:nome_Categoria, 
+        status_Categoria =:status_Categoria, 
+        descricao_Categoria =:descricao_Categoria,  
+        obs_Categoria =:obs_Categoria
         where id_Categoria=:id_Categoria'
         );   
 
@@ -29,7 +29,7 @@ if($_POST)
         if($sql->rowCount()==1)
         {
             echo "<p>Dados alterados com sucesso</p>";
-            echo'<p><a href="Login_sistema.php">Voltar</p>';
+            echo'<p><a href="Login_sistema.php?Tela=Categoria">Voltar</p>';
         }
     }
     catch(PDOException $ex)

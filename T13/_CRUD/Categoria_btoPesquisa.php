@@ -2,10 +2,10 @@
 include_once('Conexao.php');
 
 $id_Categoria="";
-$cadastro_Categoria=""; 
+$cadastro_Categoria="";
 $nome_Categoria ="";
 $status_Categoria ="";
-$descricao_Categoria=""; 
+$descricao_Categoria="";
 $obs_Categoria ="";
 
 if($_POST)
@@ -30,7 +30,7 @@ if($_POST)
         else
         {
             echo "<p>Erro, dados não encontrado</p>";
-            echo'<p><a href="Login_sistema.php">Voltar</p>';
+            echo'<p><a href="Login_sistema.php"?Tela=Categoria>Voltar</p>';
 
         }
 
@@ -39,7 +39,5 @@ if($_POST)
     {
         echo $ex->getMessage();
     }
-
 }
-
 ?>
