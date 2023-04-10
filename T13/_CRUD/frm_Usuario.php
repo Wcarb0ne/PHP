@@ -1,5 +1,5 @@
 <?php include_once('Usuario_btoPesquisa.php')?>
-<form action="" class="form-control" method="POST">
+<form id="frm_Usuario"  action="" class="form-control" method="POST">
     <div class="row">
         <div class="col-sm-12">
             <h1 text-align="">Formulário de Cadastro de Usuários</h1>
@@ -20,14 +20,17 @@
         <div class="col-sm-3">
             <label for="Nome">Nome*</label>
             <input type="text" class="form-control" name="txtNome" id="txtNome" placeholder="Nome Completo"value="<?=$nome_Usuario?>">
+            <span class="span-required">Preencha o campo nome</span>
         </div>
         <div class="col-sm-3">
             <label for="Nome">Data Nascimento*</label>
             <input type="date" class="form-control" name="txtDataNasc" id="txtDataNasc" placeholder="Data Nascimento"value="<?=$dataNasc_Usuario?>">
+            <span class="span-required">Preencha o campo data</span>
         </div>
         <div class="col-sm-3">
             <label for="Nome">CPF*</label>
             <input type="tel" class="form-control" name="txtCpf" id="txtCpf" placeholder="Informe seu CPF"value="<?=$cpf_Usuario?>">
+            <span class="span-required">Preencha o campo Cpf</span>
         </div>
         <div class="col-sm-3">
             <label for="Nome">Gênero*</label>
@@ -36,16 +39,19 @@
                 <option value="Masculino"<?=($genero_Usuario=="Masculino" ? 'selected' : '')?>>Masculino</option>
                 <option value="Feminino"<?=($genero_Usuario=="Feminino" ? 'selected' : '')?>>Feminino</option>
             </select>
+            <span class="span-required">selecione o campo genero</span>
         </div>
     </div>
     <div class="row mt-1"><!--bloco  email tel1 tel 2-->
         <div class="col-sm-4">
             <label for="Nome">E-mail*</label>
             <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Insira seu Email"value="<?=$email_Usuario?>">
+            <span class="span-required">insira um email valido</span>
         </div>
         <div class="col-sm-4">
             <label for="Nome">Telefone*</label>
             <input type="tel" class="form-control" name="txtTelefone1" id="txtTelefone1" placeholder="Insira um telefone"value="<?=$telefone1_Usuario?>">
+            <span class="span-required">Preencha o campo telefone</span>
         </div>
         <div class="col-sm-4">
             <label for="Nome">Telefone2</label>
@@ -57,14 +63,17 @@
         <div class="col-sm-3">
             <label for="Nome">Logradouro*</label>
             <input type="text" class="form-control" name="txtLogradouro" id="txtLogradouro" placeholder="Ex: Rua Luiz Faccini, 132. "value="<?=$logradouro_Usuario?>">
+            <span class="span-required">Preencha o campo logradouro</span>
         </div>
         <div class="col-sm-2">
             <label for="Nome">Cep*</label>
             <input type="tel" class="form-control" name="txtCep" id="txtCep" placeholder="Informe seu Cep"value="<?=$cep_Usuario?>">
+            <span class="span-required">Preencha o campo Cep</span>
         </div>
         <div class="col-sm-3">
             <label for="Nome">Cidade*</label>
             <input type="text" class="form-control" name="txtCidade" id="txtCidade" placeholder="Inform sua Cidade"value="<?=$cidade_Usuario?>">
+            <span class="span-required">Preencha o campo cidade</span>
         </div>
         <div class="col-sm-2">
             <label for="Nome">UF*</label>
@@ -97,6 +106,7 @@
                 <option value="Sergipe"<?=($uf_Usuario=="Sergipe" ? 'selected' : '')?>>SE</option>4
                 <option value="Tocantins"<?=($uf_Usuario=="Tocantins" ? 'selected' : '')?>>TO</option>3
             </select>
+            <span class="span-required">selecione o campo uf</span>
         </div>
         <div class="col-sm-2">
             <label for="Nome">Status*</label>
@@ -105,6 +115,7 @@
                 <option value="Ativo"<?=($status_Usuario=="Ativo" ? 'selected' : '')?>>Ativo</option>
                 <option value="Inativo"<?=($status_Usuario=="Inativo" ? 'selected' : '')?>>Inativo</option>
             </select>
+            <span class="span-required">selecione o status</span>
         </div>
     </div>
     <!-- SEPARAR-->
@@ -112,14 +123,17 @@
         <div class="col-sm-4">
             <label for="Nome">Login*</label>
             <input type="text" class="form-control" name="txtLogin" id="txtLogin" placeholder="Login do usuário"value="<?=$login_Usuario?>">
+            <span class="span-required">Preencha o campo login</span>
         </div>
         <div class="col-sm-4">
             <label for="Nome">Senha*</label>
             <input type="password" class="form-control" name="txtSenha" id="txtSenha" placeholder="Informe a senha"value="<?=$senha_Usuario?>">
+            <span class="span-required">Preencha o campo senha</span>
         </div>
         <div class="col-sm-4">
             <label for="Nome">Confirmar Senha*</label>
             <input type="password" class="form-control" name="txtConfirmarSenha" id="txtConfirmarSenha" placeholder="Informe a senha"value="<?=$confirmarSenha_Usuario?>">
+            <span class="span-required">Preencha o campo confirmar senha</span>
         </div>
     </div>
     <!-- SEPARAR-->
@@ -132,7 +146,7 @@
     <div class="row mt-4 mb-4"><!--botoes-->
         <div class="col-sm-12">
             <button name="btoPesquisa" class="btn btn-primary"formaction="Login_sistema.php?Tela=Usuario">Pesquisar</button>
-            <button name="btoCadastrar" class="btn btn-success"formaction="Usuario_btoCadastrar.php?Tela=Usuario">Cadastrar</button>
+            <button type="submit" name="btoCadastrar" class="btn btn-success"formaction="Usuario_btoCadastrar.php?Tela=Usuario">Cadastrar</button>
             <button name="btoAlterar" class="btn btn-warning"formaction="Usuario_btoAlterar.php?Tela=Usuario">Alterar</button>
             <a type="reset" name="btoLimpar" class="btn btn-dark"href="Login_sistema.php?Tela=Usuario">Limpar</a>
             <button name="btoExcluir" class="btn btn-danger"formaction="Usuario_btoExcluir.php?Tela=Usuario">Excluir</button>
@@ -140,3 +154,185 @@
         </div>
     </div>
 </form>
+<script>
+
+const Uvalidacao =document.getElementById('Uvalidacao');
+const campos = document.querySelectorAll('required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+
+Uvalidacao.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    nomeValidade();
+});
+
+function setError(frm_Usuario){
+    campos(frm_Usuario).style.border = '2px solid red';
+    spans(frm_Usuario).style.display = 'block';
+}
+
+function removeEroor(frm_Usuario){
+    campos(frm_Usuario).style.border = '';
+    spans(frm_Usuario).style.display = 'none';
+}
+
+function nomeValidade(){
+    if(campos[2].ariaValueMax.length < 5)
+    {
+        setError(2);
+        //console.log('NOME DEVE CONTER 10 CARACTERES')
+    }
+    else
+    {
+        removeEroor(2);
+        //console.log('NOME VALIDADO');
+    }
+}
+function dataValidade(){
+    if(campos[3].ariaValueMax.length < 5)
+    {
+        setError(3);
+    }
+    else
+    {
+        removeEroor(3);
+    }
+}
+function cpfValidade(){
+    if(campos[4].ariaValueMax.length < 5)
+    {
+        setError(4);
+    }
+    else
+    {
+        removeEroor(4);
+    }
+}
+function generoValidade(){
+    if(campos[5].ariaValueMax.length < 5)
+    {
+        setError(5);
+    }
+    else
+    {
+        removeEroor(5);
+    }
+}
+emailValidade(){
+ if(emailRegex.test(campos[1].value))
+        {
+            setError(1);
+            //console.log('Email validado');
+        }
+        else
+        {
+            removeEroor(1);
+            //console.log('Email não validado');
+        }
+}
+function telefone1Validade(){
+    if(campos[7].ariaValueMax.length < 11)
+    {
+        setError(7);
+    }
+    else
+    {
+        removeEroor(7);
+    }
+}
+function telefone2Validade(){
+    if(campos[8].ariaValueMax.length < 11)
+    {
+        setError(8);
+    }
+    else
+    {
+        removeEroor(8);
+    }
+}
+function logradouroValidade(){
+    if(campos[9].ariaValueMax.length < 5)
+    {
+        setError(9);
+    }
+    else
+    {
+        removeEroor(9);
+    }
+}
+function cepValidade(){
+    if(campos[10].ariaValueMax.length < 5)
+    {
+        setError(10);
+    }
+    else
+    {
+        removeEroor(10);
+    }
+}
+function cidadeValidade(){
+    if(campos[11].ariaValueMax.length < 5)
+    {
+        setError(11);
+    }
+    else
+    {
+        removeEroor(11);
+    }
+}
+function ufValidade(){
+    if(campos[12].ariaValueMax.length < 5)
+    {
+        setError(12);
+    }
+    else
+    {
+        removeEroor(12);
+    }
+}
+function statusValidade(){
+    if(campos[13].ariaValueMax.length < 5)
+    {
+        setError(13);
+    }
+    else
+    {
+        removeEroor(13);
+    }
+}
+function loginValidade(){
+    if(campos[14].ariaValueMax.length < 10)
+    {
+        setError(14);
+        //console.log('LOGIN DEVE CONTER 10 CARACTERES')
+    }
+    else
+    {
+        removeEroor(14);
+        //console.log('LOGIN VALIDADO');
+    }
+}
+function senhaValidade(){
+        if(campos[15].value.length < 3)
+        {
+            setError(15);
+        }
+        else {
+            removeEroor(15);
+            confirmarsenhaValiade();
+        }
+}
+function confirmarsenhaValiade(){
+        if(campos[15].value == campos[16].value && campos[16].value.length >= 3)
+        {
+            removeEroor(16);
+        }
+        else
+        {
+            setError(16);
+        }
+}
+
+
+
+</script>
